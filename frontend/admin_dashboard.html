@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Thanh tiêu đề -->
+    <header class="header">
+        <div class="user-info">
+            <span>Xin chào, <strong id="username-display"></strong> (Admin)</span>
+        </div>
+        <button id="logout-btn">Đăng xuất</button>
+    </header>
+
+    <div class="container">
+        <h2>Quản lý hệ thống</h2>
+        
+        <!-- Nút xuất CSV -->
+        <button id="export-csv-btn">Xuất CSV Khảo sát</button>
+        <hr/>
+
+        <!-- Nút lấy thống kê -->
+        <h3>Thống kê khảo sát</h3>
+        <button id="stats-btn">Xem thống kê</button>
+        <div id="stats-result"></div>
+        <hr/>
+
+        <!-- Nút xem trạng thái nộp -->
+        <h3>Trạng thái nộp khảo sát</h3>
+        <button id="status-btn">Xem trạng thái người dùng</button>
+        <div id="status-result"></div>
+    </div>
+    
+    <!-- File JS xử lý logic admin dashboard -->
+    <script src="js/admin_dashboard.js" defer></script>
+</body>
+</html>
+

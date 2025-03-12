@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Khảo sát Siêu PGD</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header với thông tin người dùng và nút Đăng xuất -->
+    <header class="header">
+        <div class="user-info">
+            <span>Xin chào A/C, <strong id="username"></strong></span>
+        </div>
+        <button id="logout-btn">Đăng xuất</button>
+    </header>
+
+    <div class="container">
+        <h2>Form Khảo sát Siêu PGD</h2>
+        <p><strong>Chi nhánh:</strong> <span id="branch_id"></span></p>
+
+        <form id="surveyForm">
+            <h3>Cơ sở vật chất, trang thiết bị của các Siêu PGD</h3>
+            <label><input type="checkbox" name="csvc" value="Đầu tư trụ sở mới"> Đầu tư trụ sở mới</label><br>
+            <label><input type="checkbox" name="csvc" value="Áp dụng mô hình sảnh giao dịch chuẩn"> Áp dụng mô hình sảnh giao dịch chuẩn</label><br>
+            <label><input type="checkbox" name="csvc" value="Trang bị máy R-ATM"> Trang bị máy R-ATM</label><br>
+            <label><input type="checkbox" name="csvc" value="Trang bị hệ thống lấy số tự động"> Trang bị hệ thống lấy số tự động</label><br>
+            <label>Ý kiến khác:<br>
+                <textarea name="csvc_khac" rows="2" cols="50"></textarea>
+            </label>
+
+            <h3>Cơ chế chính sách, quy định, quy trình áp dụng đối với các Siêu PGD</h3>
+            <label><input type="checkbox" name="csqd" value="Nâng mức thẩm quyền cấp tín dụng"> Nâng mức thẩm quyền cấp tín dụng</label><br>
+            <label><input type="checkbox" name="csqd" value="Nâng mức thẩm quyền giải ngân"> Nâng mức thẩm quyền giải ngân</label><br>
+            <label><input type="checkbox" name="csqd" value="Nâng hạn mức phê duyệt giao dịch"> Nâng hạn mức phê duyệt giao dịch</label><br>
+            <label>Ý kiến khác:<br>
+                <textarea name="csqd_khac" rows="2" cols="50"></textarea>
+            </label>
+
+            <h3>Cơ chế hỗ trợ khác từ NHCTVN đối với các Siêu PGD</h3>
+            <label><input type="checkbox" name="hotro" value="Hỗ trợ chi phí xây dựng, sửa chữa"> Hỗ trợ chi phí xây dựng, sửa chữa</label><br>
+            <label><input type="checkbox" name="hotro" value="Ưu tiên hỗ trợ từ TSC/CN về nguồn khách hàng"> Ưu tiên hỗ trợ từ TSC/CN về nguồn khách hàng</label><br>
+            <label><input type="checkbox" name="hotro" value="Bổ sung thêm nhân sự cho CN"> Bổ sung thêm nhân sự cho CN</label><br>
+            <label><input type="checkbox" name="hotro" value="Cơ chế động lực về lương, thăng tiến"> Cơ chế động lực về lương, thăng tiến</label><br>
+            <label>Ý kiến khác:<br>
+                <textarea name="hotro_khac" rows="2" cols="50"></textarea>
+            </label>
+
+            <h3>Anh/Chị có đề xuất triển khai mô hình Siêu PGD với PGD của CN mình?</h3>
+            <label><input type="radio" name="proposal" value="Có"> Có</label><br>
+            <label><input type="radio" name="proposal" value="Không"> Không</label><br>
+
+            <h3>III. Trường hợp có đề xuất triển khai mô hình Siêu PGD với PGD của CN mình</h3>
+            <label>Mã PGD - Tên PGD có thể áp dụng mô hình Siêu PGD:<br>
+                <input type="text" name="pgd_info">
+            </label>
+
+            <h3>IV. Ý kiến khác</h3>
+            <label>Nhập ý kiến bổ sung:<br>
+                <textarea name="additional_comments" rows="4" cols="50"></textarea>
+            </label>
+
+            <br><br>
+            <button type="submit">Gửi khảo sát</button>
+        </form>
+    </div>
+
+    <!-- Chỉ gọi file survey.js để xử lý logic -->
+    <script src="js/survey.js" defer></script>
+</body>
+</html>
+

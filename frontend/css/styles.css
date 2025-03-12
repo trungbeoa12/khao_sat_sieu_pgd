@@ -1,0 +1,77 @@
+/* Header chứa thông tin user và nút Đăng xuất */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.user-info {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#logout-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#logout-btn:hover {
+    background-color: darkred;
+}
+
+/* Căn chỉnh form khảo sát */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Căn chỉnh phần tiêu đề */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+h3 {
+    color: #007bff;
+}
+
+/* Căn chỉnh input và textarea */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Nút Gửi khảo sát */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: darkgreen;
+}
+
